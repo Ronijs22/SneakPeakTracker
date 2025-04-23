@@ -21,73 +21,38 @@ export default function Home() {
 
   return (
     <>
-      {/* Hero Section */}
-      <section className="bg-secondary text-white overflow-hidden relative h-[60vh] sm:h-[70vh] flex items-center">
-        <div className="container mx-auto px-4 z-10 relative">
-          <div className="max-w-xl">
-            <h1 className="text-4xl md:text-6xl font-heading font-bold mb-4">Step Into <span className="text-primary">Style</span></h1>
-            <p className="text-lg md:text-xl mb-8 text-gray-300">Discover our latest collection of premium sneakers designed for comfort and performance.</p>
-            <Link href="/products" className="inline-block bg-primary text-white font-semibold px-8 py-3 rounded-full hover:bg-opacity-90 transition-all shadow-lg">
-              Shop Now
-            </Link>
-          </div>
-        </div>
-        <div className="absolute right-0 top-0 bottom-0 w-1/2 lg:w-3/5 opacity-50 md:opacity-70">
+      {/* Main Carousel */}
+      <section className="relative overflow-hidden">
+        <div className="relative w-full h-[500px]">
+          <div className="absolute inset-0 bg-black/20"></div>
           <img 
             src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80" 
             alt="Sneaker Collection" 
             className="w-full h-full object-cover"
           />
+          {/* Large SNEAKPEAK logo watermark */}
+          <div className="absolute right-[50px] top-[50px] w-[428px] h-[428px] opacity-60">
+            <img 
+              src="/logo-placeholder.png" 
+              alt="SNEAKPEAK Logo" 
+              className="w-full h-full object-contain"
+            />
+          </div>
+          <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-center text-white z-10">
+            <div className="flex space-x-2 mt-4">
+              <span className="w-3 h-3 bg-[#B98615] rounded-full"></span>
+              <span className="w-3 h-3 bg-white rounded-full opacity-70"></span>
+              <span className="w-3 h-3 bg-white rounded-full opacity-70"></span>
+              <span className="w-3 h-3 bg-white rounded-full opacity-70"></span>
+            </div>
+          </div>
         </div>
       </section>
       
       {/* Featured Products */}
-      <section id="featured-products" className="py-16">
+      <section className="py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-heading font-bold mb-8 text-center">Featured Products</h2>
-          
-          {/* Filters */}
-          <div className="mb-8 flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center space-x-4 overflow-x-auto pb-2 w-full md:w-auto">
-              <Link href="/products" className="px-5 py-2 rounded-full font-medium transition-colors whitespace-nowrap bg-primary text-white">
-                All
-              </Link>
-              <Link href="/products?category=running" className="px-5 py-2 rounded-full font-medium transition-colors whitespace-nowrap bg-white text-gray-700 hover:bg-gray-100">
-                Running
-              </Link>
-              <Link href="/products?category=casual" className="px-5 py-2 rounded-full font-medium transition-colors whitespace-nowrap bg-white text-gray-700 hover:bg-gray-100">
-                Casual
-              </Link>
-              <Link href="/products?category=basketball" className="px-5 py-2 rounded-full font-medium transition-colors whitespace-nowrap bg-white text-gray-700 hover:bg-gray-100">
-                Basketball
-              </Link>
-              <Link href="/products?category=training" className="px-5 py-2 rounded-full font-medium transition-colors whitespace-nowrap bg-white text-gray-700 hover:bg-gray-100">
-                Training
-              </Link>
-            </div>
-            
-            <div className="flex items-center gap-4 w-full md:w-auto">
-              <select 
-                className="border border-gray-300 rounded-full py-2 px-4 bg-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
-              >
-                <option value="all">Price: All</option>
-                <option value="under100">Under $100</option>
-                <option value="100to200">$100 - $200</option>
-                <option value="over200">Over $200</option>
-              </select>
-              
-              <select 
-                className="border border-gray-300 rounded-full py-2 px-4 bg-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
-              >
-                <option value="all">Color: All</option>
-                <option value="black">Black</option>
-                <option value="white">White</option>
-                <option value="red">Red</option>
-                <option value="blue">Blue</option>
-                <option value="green">Green</option>
-              </select>
-            </div>
-          </div>
+          <h2 className="text-6xl font-heading mb-8 text-center">POPULĀRIE PRODUKTI</h2>
           
           {/* Products Grid */}
           {isLoading ? (
@@ -103,8 +68,8 @@ export default function Home() {
               ))}
             </div>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-              {featuredProducts?.map((product: Product) => (
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+              {Array.isArray(featuredProducts) && featuredProducts.map((product: Product) => (
                 <ProductCard 
                   key={product.id} 
                   product={product} 
@@ -115,43 +80,19 @@ export default function Home() {
           )}
           
           <div className="text-center mt-12">
-            <Link href="/products" className="bg-white border border-gray-300 text-neutral-dark font-semibold px-8 py-3 rounded-full hover:bg-gray-100 transition-colors inline-block">
-              View All Products
+            <Link href="/products" className="bg-[#B98615] text-white font-heading text-2xl px-8 py-2 rounded-full hover:bg-opacity-90 transition-all inline-block">
+              PARĀDĪT VAIRĀK PRODUKTU
             </Link>
           </div>
         </div>
       </section>
       
-      {/* Featured Collection Banner */}
-      <section className="py-16 bg-gray-100">
-        <div className="container mx-auto px-4">
-          <div className="bg-white rounded-xl overflow-hidden shadow-md">
-            <div className="grid md:grid-cols-2">
-              <div className="p-8 md:p-12 flex flex-col justify-center">
-                <h2 className="text-3xl font-heading font-bold mb-4">New Season Collection</h2>
-                <p className="text-gray-600 mb-6">Discover our latest styles designed for performance and everyday wear. Limited edition colorways available now.</p>
-                <Link href="/products?category=new" className="inline-block bg-primary text-white font-semibold px-8 py-3 rounded-full hover:bg-opacity-90 transition-all shadow-md w-fit">
-                  Shop Collection
-                </Link>
-              </div>
-              <div className="h-64 md:h-auto">
-                <img 
-                  src="https://images.unsplash.com/photo-1556906781-9a412961c28c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80" 
-                  alt="New Season Collection" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
       {/* Categories Section */}
-      <section className="py-16">
+      <section className="py-12">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-heading font-bold mb-8 text-center">Shop By Category</h2>
+          <h2 className="text-6xl font-heading mb-8 text-center">POPULĀRAS KATEGORIJAS</h2>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {/* Category 1 */}
             <Link href="/products?category=running" className="group rounded-lg overflow-hidden relative">
               <div className="aspect-square bg-gray-200 relative overflow-hidden">
@@ -161,7 +102,7 @@ export default function Home() {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-                  <h3 className="text-white font-semibold text-xl md:text-2xl">Running</h3>
+                  <h3 className="text-white font-heading text-4xl">SKRIEŠANAS</h3>
                 </div>
               </div>
             </Link>
@@ -175,7 +116,7 @@ export default function Home() {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-                  <h3 className="text-white font-semibold text-xl md:text-2xl">Basketball</h3>
+                  <h3 className="text-white font-heading text-4xl">BASKETBOLA</h3>
                 </div>
               </div>
             </Link>
@@ -189,7 +130,7 @@ export default function Home() {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-                  <h3 className="text-white font-semibold text-xl md:text-2xl">Training</h3>
+                  <h3 className="text-white font-heading text-4xl">TRENIŅU</h3>
                 </div>
               </div>
             </Link>
@@ -203,13 +144,93 @@ export default function Home() {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-                  <h3 className="text-white font-semibold text-xl md:text-2xl">Casual</h3>
+                  <h3 className="text-white font-heading text-4xl">IKDIENAS</h3>
                 </div>
               </div>
             </Link>
           </div>
         </div>
       </section>
+      
+      {/* Brands Section */}
+      <section className="py-12">
+        <div className="container mx-auto px-4">
+          <h2 className="text-6xl font-heading mb-8 text-center">POPULĀRI ZĪMOLI</h2>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="aspect-square bg-white shadow-md rounded-lg flex items-center justify-center p-6">
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1200px-Logo_NIKE.svg.png" 
+                alt="Nike" 
+                className="max-h-16 object-contain"
+              />
+            </div>
+            <div className="aspect-square bg-white shadow-md rounded-lg flex items-center justify-center p-6">
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Adidas_Logo.svg/1200px-Adidas_Logo.svg.png" 
+                alt="Adidas" 
+                className="max-h-16 object-contain"
+              />
+            </div>
+            <div className="aspect-square bg-white shadow-md rounded-lg flex items-center justify-center p-6">
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Puma_logo.svg/2560px-Puma_logo.svg.png" 
+                alt="Puma" 
+                className="max-h-16 object-contain"
+              />
+            </div>
+            <div className="aspect-square bg-white shadow-md rounded-lg flex items-center justify-center p-6">
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/New_Balance_logo.svg/2560px-New_Balance_logo.svg.png" 
+                alt="New Balance" 
+                className="max-h-16 object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Features Section */}
+      <section className="py-12">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white shadow-md rounded-lg p-6 text-center">
+              <div className="w-16 h-16 bg-[#B98615] bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-[#B98615]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
+                </svg>
+              </div>
+              <h3 className="font-heading text-3xl mb-2">BEZMAKSAS PIEGĀDE</h3>
+              <p className="font-body text-gray-600">Visā pasaulē pirkumiem virs 100€</p>
+            </div>
+            
+            <div className="bg-white shadow-md rounded-lg p-6 text-center">
+              <div className="w-16 h-16 bg-[#B98615] bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-[#B98615]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                </svg>
+              </div>
+              <h3 className="font-heading text-3xl mb-2">DROŠI MAKSĀJUMI</h3>
+              <p className="font-body text-gray-600">100% droši maksājumi</p>
+            </div>
+            
+            <div className="bg-white shadow-md rounded-lg p-6 text-center">
+              <div className="w-16 h-16 bg-[#B98615] bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-[#B98615]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                </svg>
+              </div>
+              <h3 className="font-heading text-3xl mb-2">ĀTRA ATGRIEŠANA</h3>
+              <p className="font-body text-gray-600">30 dienu garantēta atmaksa</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Footer Copyright */}
+      <div className="py-4 text-center">
+        <p className="font-heading text-2xl">© 2025 SNEAKPEAK, Inc. All Rights Reserved</p>
+      </div>
 
       {/* Product Detail Modal */}
       {showProductDetail && activeProduct && (
