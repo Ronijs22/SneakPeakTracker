@@ -21,7 +21,7 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="bg-gradient-to-b from-white to-gray-300 shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4">
         {/* Top Navigation */}
         <div className="py-4 flex items-center justify-between">
@@ -37,7 +37,7 @@ export default function Header() {
             <div className="flex w-full">
               <div className="relative w-full flex">
                 {/* Categories Dropdown */}
-                <div className="relative flex items-center bg-opacity-50 bg-gray-200 rounded-l-lg px-4 min-w-[225px]">
+                <div className="relative flex items-center bg-opacity-50 bg-gray-200 rounded-lg px-4 min-w-[225px]">
                   <span className="text-sm uppercase tracking-wider font-medium">VISAS KATEGORIJAS</span>
                   <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
@@ -110,7 +110,7 @@ export default function Header() {
                       </span>
                     )}
                   </div>
-                  <span className="text-[#B98615] text-xs uppercase tracking-widest mt-1 font-medium">Grozs</span>
+                  <span className="text-xs uppercase tracking-widest mt-1 font-medium text-right">MANS GROZS<br/>PROFILS</span>
                 </div>
               </button>
             </div>
@@ -128,7 +128,7 @@ export default function Header() {
         </div>
         
         {/* Categories Button + Main Navigation */}
-        <nav className="hidden md:flex items-center border-t border-gray-100 py-3">
+        <nav className="hidden md:flex items-center bg-black text-white py-3">
           {/* All Categories Button */}
           <div className="relative mr-6">
             <button className="bg-[#B98615] text-white uppercase tracking-wider text-sm px-5 py-2 rounded-full flex items-center">
@@ -140,11 +140,11 @@ export default function Header() {
           </div>
           
           {/* Main Navigation Links */}
-          <ul className="flex space-x-6">
+          <ul className="flex space-x-10 px-6 justify-center w-full">
             <li>
               <Link 
                 href="/"
-                className="font-heading text-2xl hover:text-[#B98615] underline decoration-1 underline-offset-8"
+                className="font-heading text-4xl hover:text-[#B98615] underline decoration-1 underline-offset-8"
               >
                 SĀKUMS
               </Link>
@@ -152,7 +152,7 @@ export default function Header() {
             <li>
               <Link 
                 href="/about"
-                className="font-heading text-2xl hover:text-[#B98615] underline decoration-1 underline-offset-8"
+                className="font-heading text-4xl hover:text-[#B98615] underline decoration-1 underline-offset-8"
               >
                 PAR MUMS
               </Link>
@@ -160,7 +160,7 @@ export default function Header() {
             <li>
               <Link 
                 href="/gallery"
-                className="font-heading text-2xl hover:text-[#B98615] underline decoration-1 underline-offset-8"
+                className="font-heading text-4xl hover:text-[#B98615] text-[#B98615] underline decoration-[#B98615] decoration-2 underline-offset-8"
               >
                 GALERIJA
               </Link>
