@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jomolhari&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -74,7 +79,9 @@
   }
 
   body {
-    @apply font-sans antialiased bg-neutral-light text-foreground;
+    @apply font-sans antialiased text-foreground;
+    background: linear-gradient(180deg, #FFFFFF 0%, #999999 100%);
+    min-height: 100vh;
   }
 
   h1, h2, h3, h4, h5, h6 {

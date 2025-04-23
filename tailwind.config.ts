@@ -7,7 +7,8 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Inter", "sans-serif"],
-        heading: ["Montserrat", "sans-serif"],
+        heading: ["Jomhuria", "serif"],
+        body: ["Jomolhari", "serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -31,8 +32,8 @@ export default {
           foreground: "hsl(var(--popover-foreground))",
         },
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "#B98615",
+          foreground: "white",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
