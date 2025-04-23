@@ -28,7 +28,7 @@ export default function Header() {
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="text-2xl font-heading font-bold text-secondary flex items-center">
-              <img src="/logo.svg" alt="SNEAKPEAK" className="h-16 w-16 object-contain" />
+              <img src="/assets/logo.png" alt="SNEAKPEAK" className="h-36 w-36 object-contain" />
             </Link>
           </div>
           
