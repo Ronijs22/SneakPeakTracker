@@ -70,13 +70,13 @@ export default function Header() {
           </div>
 
           {/* User Icons */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-6">
             {/* Login Dialog */}
             <Dialog>
               <DialogTrigger asChild>
-                <button className="flex flex-col items-center">
-                  <div className="w-14 h-14 bg-gray-300 rounded-full border-3 border-black flex items-center justify-center hover:bg-gray-400 transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <button className="flex flex-col items-center group">
+                  <div className="w-12 h-12 bg-white rounded-full border-2 border-black flex items-center justify-center group-hover:bg-gray-100 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                     </svg>
                   </div>
@@ -118,11 +118,11 @@ export default function Header() {
               </DialogContent>
             </Dialog>
 
-            {/* Messages Icon */}
-            <Link href="/messages" className="flex flex-col items-center">
-              <div className="w-14 h-14 bg-gray-300 rounded-full border-3 border-black flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+            {/* Heart Icon */}
+            <Link href="/favorites" className="flex flex-col items-center">
+              <div className="w-12 h-12 bg-white rounded-full border-2 border-black flex items-center justify-center hover:bg-gray-100 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
               </div>
             </Link>
@@ -136,23 +136,21 @@ export default function Header() {
               </div>
             </Link>
 
-            {/* Cart Icon & Text */}
-            <div className="flex flex-col items-center">
+            {/* Cart Icon */}
+            <div className="flex flex-col items-center relative">
               <button onClick={openCart} className="group">
-                <div className="flex flex-col items-center">
-                  <div className="w-14 h-14 bg-gray-300 rounded-full border-3 border-black flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-                    </svg>
-                    {getCartCount() > 0 && (
-                      <span className="absolute -top-1 -right-1 bg-[#B98615] text-white text-xs rounded-full w-5 h-5 flex items-center justify-center font-semibold">
-                        {getCartCount()}
-                      </span>
-                    )}
-                  </div>
-                  <span className="text-xs uppercase tracking-widest mt-1 font-medium text-right">MANS GROZS<br/>PROFILS</span>
+                <div className="w-12 h-12 bg-white rounded-full border-2 border-black flex items-center justify-center group-hover:bg-gray-100 transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                  </svg>
+                  {getCartCount() > 0 && (
+                    <span className="absolute -top-1 -right-1 bg-[#B98615] text-white text-xs rounded-full w-5 h-5 flex items-center justify-center font-semibold">
+                      {getCartCount()}
+                    </span>
+                  )}
                 </div>
               </button>
+              <span className="absolute top-14 right-0 text-xs font-medium whitespace-nowrap">MANS GROZS</span>
             </div>
 
             {/* Mobile Menu Toggle */}
