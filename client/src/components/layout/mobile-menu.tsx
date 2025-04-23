@@ -54,7 +54,7 @@ export default function MobileMenu({
               className="block font-medium"
               onClick={onClose}
             >
-              New Arrivals
+              Jaunumi
             </Link>
           </li>
           <li>
@@ -63,7 +63,7 @@ export default function MobileMenu({
               className="block font-medium"
               onClick={onClose}
             >
-              Men
+              Vīriešiem
             </Link>
           </li>
           <li>
@@ -72,7 +72,7 @@ export default function MobileMenu({
               className="block font-medium"
               onClick={onClose}
             >
-              Women
+              Sievietēm
             </Link>
           </li>
           <li>
@@ -81,7 +81,7 @@ export default function MobileMenu({
               className="block font-medium"
               onClick={onClose}
             >
-              Kids
+              Bērniem
             </Link>
           </li>
           <li>
@@ -90,7 +90,7 @@ export default function MobileMenu({
               className="block font-medium"
               onClick={onClose}
             >
-              Collections
+              Kolekcijas
             </Link>
           </li>
           <li>
@@ -99,7 +99,7 @@ export default function MobileMenu({
               className="block font-medium"
               onClick={onClose}
             >
-              Sale
+              Izpārdošana
             </Link>
           </li>
           <li className="border-t border-gray-100 pt-4 mt-4">

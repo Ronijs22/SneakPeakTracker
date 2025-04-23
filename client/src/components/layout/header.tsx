@@ -132,7 +132,7 @@ export default function Header() {
           {/* All Categories Button */}
           <div className="relative mr-6">
             <button className="bg-[#B98615] text-white uppercase tracking-wider text-sm px-5 py-2 rounded-full flex items-center">
-              <span className="mr-2">ALL CATEGORIES</span>
+              <span className="mr-2">VISAS KATEGORIJAS</span>
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
               </svg>
@@ -186,7 +186,7 @@ export default function Header() {
                 href="/complaints"
                 className="font-heading text-2xl hover:text-[#B98615] underline decoration-1 underline-offset-8"
               >
-                COMPLAINTS
+                SŪDZĪBAS
               </Link>
             </li>
           </ul>
