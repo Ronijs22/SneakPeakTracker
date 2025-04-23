@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -10,7 +9,151 @@ const photos = [
     src: "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb",
     title: "Premium Sneakers"
   },
-  // ... rest of the photos array stays the same ...
+  {
+    id: 2,
+    src: "https://via.placeholder.com/150",
+    title: "Sneaker 2"
+  },
+  {
+    id: 3,
+    src: "https://via.placeholder.com/150",
+    title: "Sneaker 3"
+  },
+  {
+    id: 4,
+    src: "https://via.placeholder.com/150",
+    title: "Sneaker 4"
+  },
+  {
+    id: 5,
+    src: "https://via.placeholder.com/150",
+    title: "Sneaker 5"
+  },
+  {
+    id: 6,
+    src: "https://via.placeholder.com/150",
+    title: "Sneaker 6"
+  },
+  {
+    id: 7,
+    src: "https://via.placeholder.com/150",
+    title: "Sneaker 7"
+  },
+  {
+    id: 8,
+    src: "https://via.placeholder.com/150",
+    title: "Sneaker 8"
+  },
+  {
+    id: 9,
+    src: "https://via.placeholder.com/150",
+    title: "Sneaker 9"
+  },
+  {
+    id: 10,
+    src: "https://via.placeholder.com/150",
+    title: "Sneaker 10"
+  },
+  {
+    id: 11,
+    src: "https://via.placeholder.com/150",
+    title: "Sneaker 11"
+  },
+  {
+    id: 12,
+    src: "https://via.placeholder.com/150",
+    title: "Sneaker 12"
+  },
+  {
+    id: 13,
+    src: "https://via.placeholder.com/150",
+    title: "Sneaker 13"
+  },
+  {
+    id: 14,
+    src: "https://via.placeholder.com/150",
+    title: "Sneaker 14"
+  },
+  {
+    id: 15,
+    src: "https://via.placeholder.com/150",
+    title: "Sneaker 15"
+  },
+  {
+    id: 16,
+    src: "https://via.placeholder.com/150",
+    title: "Sneaker 16"
+  },
+  {
+    id: 17,
+    src: "https://via.placeholder.com/150",
+    title: "Sneaker 17"
+  },
+  {
+    id: 18,
+    src: "https://via.placeholder.com/150",
+    title: "Sneaker 18"
+  },
+  {
+    id: 19,
+    src: "https://via.placeholder.com/150",
+    title: "Sneaker 19"
+  },
+  {
+    id: 20,
+    src: "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2",
+    title: "Fashion Forward"
+  },
+  {
+    id: 21,
+    src: "https://images.unsplash.com/photo-1512374382149-233c42b6a83b",
+    title: "Classic White"
+  },
+  {
+    id: 22,
+    src: "https://images.unsplash.com/photo-1518002171953-a080ee817e1f",
+    title: "Retro Collection"
+  },
+  {
+    id: 23,
+    src: "https://images.unsplash.com/photo-1491553895911-0055eca6402d",
+    title: "Running Elite"
+  },
+  {
+    id: 24,
+    src: "https://images.unsplash.com/photo-1560769629-975ec94e6a86",
+    title: "Streetwear Special"
+  },
+  {
+    id: 25,
+    src: "https://images.unsplash.com/photo-1572537165377-627a37043464",
+    title: "Urban Runner"
+  },
+  {
+    id: 26,
+    src: "https://images.unsplash.com/photo-1595341888016-a392ef81b7de",
+    title: "Sport Classic"
+  },
+  {
+    id: 27,
+    src: "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb",
+    title: "Designer Series"
+  },
+  {
+    id: 28,
+    src: "https://images.unsplash.com/photo-1551116198-01d550c9809c",
+    title: "Limited Run"
+  },
+  {
+    id: 29,
+    src: "https://images.unsplash.com/photo-1556048219-bb6978360b84",
+    title: "Athletic Pro"
+  },
+  {
+    id: 30,
+    src: "https://images.unsplash.com/photo-1562183241-840b8af0721e",
+    title: "Exclusive Edition"
+  }
 ];
 
 export default function Gallery() {
@@ -38,7 +181,7 @@ export default function Gallery() {
 
   const handleKeyDown = (event: KeyboardEvent) => {
     if (selectedPhotoIndex === null) return;
-    
+
     if (event.key === 'ArrowLeft') {
       handlePrevious();
     } else if (event.key === 'ArrowRight') {
@@ -92,7 +235,7 @@ export default function Gallery() {
           >
             <X className="h-6 w-6" />
           </Button>
-          
+
           <Button
             variant="ghost"
             size="icon"
