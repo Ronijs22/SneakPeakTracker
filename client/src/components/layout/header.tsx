@@ -106,7 +106,19 @@ export default function Header() {
                     <Label htmlFor="password">Parole</Label>
                     <Input id="password" type="password" />
                   </div>
-                  <Button type="submit" className="w-full">Ielogoties</Button>
+                  <Button 
+                    type="submit" 
+                    className="w-full"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      toast({
+                        title: "Veiksmīga ielogošanās!",
+                        description: "Jūs esat veiksmīgi ielogojies sistēmā.",
+                      });
+                    }}
+                  >
+                    Ielogoties
+                  </Button>
                 </form>
                 <DialogFooter>
                   <Button variant="outline" className="w-full">Reģistrēties</Button>
