@@ -202,7 +202,9 @@ export default function Header() {
             <li>
               <Link 
                 href="/photos"
-                className="font-heading text-4xl hover:text-[#B98615] underline decoration-1 underline-offset-8"
+                className={`font-heading text-4xl hover:text-[#B98615] underline decoration-1 underline-offset-8 ${
+                  location === '/photos' ? 'text-[#B98615] decoration-[#B98615] decoration-2' : ''
+                }`}
               >
                 GALERIJA
               </Link>
