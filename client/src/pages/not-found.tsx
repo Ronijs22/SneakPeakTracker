@@ -158,6 +158,11 @@ const photos = [
 
 export default function Gallery() {
   const [selectedPhotoIndex, setSelectedPhotoIndex] = useState<number | null>(null);
+  const [searchQuery, setSearchQuery] = useState<string>("");
+
+  const filteredPhotos = photos.filter(photo => 
+    photo.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   const handlePhotoClick = (index: number) => {
     setSelectedPhotoIndex(index);
@@ -202,8 +207,17 @@ export default function Gallery() {
     <div className="min-h-screen bg-gradient-to-b from-white to-[#999999]">
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-6xl font-heading text-center mb-12">GALERIJA</h1>
+        <div className="max-w-md mx-auto mb-8">
+          <input
+            type="text"
+            placeholder="Search sneakers..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#B98615]"
+          />
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {photos.map((photo, index) => (
+          {filteredPhotos.map((photo, index) => (
             <Card 
               key={photo.id} 
               className="overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer"
