@@ -38,7 +38,7 @@ export default function Header() {
               <div className="relative w-full flex">
                 {/* Categories Dropdown */}
                 <div className="relative flex items-center bg-opacity-50 bg-gray-200 rounded-l-lg px-4 min-w-[225px]">
-                  <span className="text-sm uppercase tracking-wider font-medium">ALL CATEGORIES</span>
+                  <span className="text-sm uppercase tracking-wider font-medium">VISAS KATEGORIJAS</span>
                   <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
                   </svg>
@@ -48,7 +48,7 @@ export default function Header() {
                 <form onSubmit={handleSearch} className="flex-1">
                   <Input
                     type="text"
-                    placeholder="Search..."
+                    placeholder="Meklēt..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     className="w-full border border-gray-300 rounded-r-none border-l-0 py-3.5 focus:outline-none focus:ring-1 focus:ring-[#B98615] focus:border-[#B98615]"
@@ -61,7 +61,7 @@ export default function Header() {
                   className="bg-[#B98615] bg-opacity-65 hover:bg-opacity-100 text-black font-heading text-xl rounded-r-full px-4 py-2"
                   variant="default"
                 >
-                  SEARCH
+                  MEKLĒT
                 </Button>
               </div>
             </div>
@@ -110,7 +110,7 @@ export default function Header() {
                       </span>
                     )}
                   </div>
-                  <span className="text-[#B98615] text-xs uppercase tracking-widest mt-1 font-medium">My Cart</span>
+                  <span className="text-[#B98615] text-xs uppercase tracking-widest mt-1 font-medium">Grozs</span>
                 </div>
               </button>
             </div>

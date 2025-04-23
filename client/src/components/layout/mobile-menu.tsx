@@ -26,7 +26,7 @@ export default function MobileMenu({
         <form onSubmit={handleSearch} className="relative mb-4">
           <Input 
             type="text" 
-            placeholder="Search for sneakers..."
+            placeholder="Meklēt apavus..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full border border-gray-300 rounded-full py-2 px-4 pl-10 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
@@ -108,7 +108,7 @@ export default function MobileMenu({
               className="block font-medium"
               onClick={onClose}
             >
-              Account
+              Konts
             </Link>
           </li>
           <li>
@@ -117,7 +117,7 @@ export default function MobileMenu({
               className="block font-medium"
               onClick={onClose}
             >
-              Wishlist
+              Vēlmju saraksts
             </Link>
           </li>
         </ul>
