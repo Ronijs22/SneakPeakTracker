@@ -5,6 +5,16 @@ import MobileMenu from './mobile-menu';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { Label } from "@/components/ui/label";
 
 export default function Header() {
   const [location, navigate] = useLocation();
@@ -69,14 +79,40 @@ export default function Header() {
           
           {/* User Icons */}
           <div className="flex items-center space-x-4">
-            {/* Profile Icon */}
-            <Link href="/account" className="flex flex-col items-center">
-              <div className="w-14 h-14 bg-gray-300 rounded-full border-3 border-black flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
-              </div>
-            </Link>
+            {/* Login Dialog */}
+            <Dialog>
+              <DialogTrigger asChild>
+                <button className="flex flex-col items-center">
+                  <div className="w-14 h-14 bg-gray-300 rounded-full border-3 border-black flex items-center justify-center hover:bg-gray-400 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                  </div>
+                </button>
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-[425px]">
+                <DialogHeader>
+                  <DialogTitle className="text-2xl">Ielogoties</DialogTitle>
+                  <DialogDescription>
+                    Lūdzu, ievadiet savu e-pastu un paroli, lai ielogotos
+                  </DialogDescription>
+                </DialogHeader>
+                <form className="grid gap-4 py-4">
+                  <div className="grid gap-2">
+                    <Label htmlFor="email">E-pasts</Label>
+                    <Input id="email" type="email" placeholder="jusu@epasts.lv" />
+                  </div>
+                  <div className="grid gap-2">
+                    <Label htmlFor="password">Parole</Label>
+                    <Input id="password" type="password" />
+                  </div>
+                  <Button type="submit" className="w-full">Ielogoties</Button>
+                </form>
+                <DialogFooter>
+                  <Button variant="outline" className="w-full">Reģistrēties</Button>
+                </DialogFooter>
+              </DialogContent>
+            </Dialog>
             
             {/* Messages Icon */}
             <Link href="/messages" className="flex flex-col items-center">
