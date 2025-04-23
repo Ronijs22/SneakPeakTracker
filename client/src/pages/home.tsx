@@ -33,7 +33,7 @@ export default function Home() {
           {/* Large SNEAKPEAK logo watermark */}
           <div className="absolute right-[50px] top-[50px] w-[428px] h-[428px] opacity-60">
             <img 
-              src="/logo-placeholder.png" 
+              src="/logo.svg" 
               alt="SNEAKPEAK Logo" 
               className="w-full h-full object-contain"
             />

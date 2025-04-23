@@ -28,10 +28,7 @@ export default function Header() {
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="text-2xl font-heading font-bold text-secondary flex items-center">
-              <img src="/logo-placeholder.png" alt="SNEAKPEAK" className="h-16 w-16 object-contain" />
-              <span className="font-heading text-3xl ml-2">
-                SNEAK<span className="text-[#B98615]">PEAK</span>
-              </span>
+              <img src="/logo.svg" alt="SNEAKPEAK" className="h-16 w-16 object-contain" />
             </Link>
           </div>
           
@@ -149,7 +146,7 @@ export default function Header() {
                 href="/"
                 className="font-heading text-2xl hover:text-[#B98615] underline decoration-1 underline-offset-8"
               >
-                HOME
+                SĀKUMS
               </Link>
             </li>
             <li>
@@ -157,7 +154,7 @@ export default function Header() {
                 href="/about"
                 className="font-heading text-2xl hover:text-[#B98615] underline decoration-1 underline-offset-8"
               >
-                ABOUT US
+                PAR MUMS
               </Link>
             </li>
             <li>
@@ -165,7 +162,7 @@ export default function Header() {
                 href="/gallery"
                 className="font-heading text-2xl hover:text-[#B98615] underline decoration-1 underline-offset-8"
               >
-                GALLERY
+                GALERIJA
               </Link>
             </li>
             <li>
@@ -173,7 +170,7 @@ export default function Header() {
                 href="/offers"
                 className="font-heading text-2xl hover:text-[#B98615] underline decoration-1 underline-offset-8"
               >
-                OFFERS
+                PIEDĀVĀJUMI
               </Link>
             </li>
             <li>
@@ -181,7 +178,7 @@ export default function Header() {
                 href="/contact"
                 className="font-heading text-2xl hover:text-[#B98615] underline decoration-1 underline-offset-8"
               >
-                CONTACTS
+                KONTAKTI
               </Link>
             </li>
             <li>
