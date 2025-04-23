@@ -20,7 +20,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-secondary text-white pt-16 pb-6">
+    <footer className="bg-gradient-to-t from-gray-300 to-white pt-16 pb-6 text-black">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
@@ -31,7 +31,7 @@ export default function Footer() {
               </svg>
               SNEAKPEAK
             </h3>
-            <p className="text-gray-300 mb-4">Premium sneakers for every style and activity. Quality, comfort, and design in every pair.</p>
+            <p className="text-gray-700 mb-4">Premium sneakers for every style and activity. Quality, comfort, and design in every pair.</p>
             <div className="flex space-x-4">
               <a href="#" className="hover:text-primary transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -60,11 +60,11 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Shopping</h3>
             <ul className="space-y-3">
-              <li><Link href="/products" className="text-gray-300 hover:text-white transition-colors">All Products</Link></li>
-              <li><Link href="/products?category=new" className="text-gray-300 hover:text-white transition-colors">New Arrivals</Link></li>
-              <li><Link href="/products?sort=bestselling" className="text-gray-300 hover:text-white transition-colors">Best Sellers</Link></li>
-              <li><Link href="/products?category=sale" className="text-gray-300 hover:text-white transition-colors">On Sale</Link></li>
-              <li><Link href="/gift-cards" className="text-gray-300 hover:text-white transition-colors">Gift Cards</Link></li>
+              <li><Link href="/products" className="text-gray-700 hover:text-[#B98615] transition-colors">All Products</Link></li>
+              <li><Link href="/products?category=new" className="text-gray-700 hover:text-[#B98615] transition-colors">New Arrivals</Link></li>
+              <li><Link href="/products?sort=bestselling" className="text-gray-700 hover:text-[#B98615] transition-colors">Best Sellers</Link></li>
+              <li><Link href="/products?category=sale" className="text-gray-700 hover:text-[#B98615] transition-colors">On Sale</Link></li>
+              <li><Link href="/gift-cards" className="text-gray-700 hover:text-[#B98615] transition-colors">Gift Cards</Link></li>
             </ul>
           </div>
           
@@ -72,18 +72,18 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Customer Service</h3>
             <ul className="space-y-3">
-              <li><Link href="/contact" className="text-gray-300 hover:text-white transition-colors">Contact Us</Link></li>
-              <li><Link href="/shipping" className="text-gray-300 hover:text-white transition-colors">Shipping & Returns</Link></li>
-              <li><Link href="/tracking" className="text-gray-300 hover:text-white transition-colors">Order Tracking</Link></li>
-              <li><Link href="/faq" className="text-gray-300 hover:text-white transition-colors">FAQ</Link></li>
-              <li><Link href="/size-guide" className="text-gray-300 hover:text-white transition-colors">Size Guide</Link></li>
+              <li><Link href="/contact" className="text-gray-700 hover:text-[#B98615] transition-colors">Contact Us</Link></li>
+              <li><Link href="/shipping" className="text-gray-700 hover:text-[#B98615] transition-colors">Shipping & Returns</Link></li>
+              <li><Link href="/tracking" className="text-gray-700 hover:text-[#B98615] transition-colors">Order Tracking</Link></li>
+              <li><Link href="/faq" className="text-gray-700 hover:text-[#B98615] transition-colors">FAQ</Link></li>
+              <li><Link href="/size-guide" className="text-gray-700 hover:text-[#B98615] transition-colors">Size Guide</Link></li>
             </ul>
           </div>
           
           {/* Newsletter */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Newsletter</h3>
-            <p className="text-gray-300 mb-4">Subscribe to receive updates, exclusive offers, and more.</p>
+            <p className="text-gray-700 mb-4">Subscribe to receive updates, exclusive offers, and more.</p>
             <form className="flex" onSubmit={handleSubscribe}>
               <Input 
                 type="email" 
@@ -106,11 +106,11 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm mb-4 md:mb-0">© 2023 SNEAKPEAK. All rights reserved.</p>
+          <p className="font-heading text-3xl tracking-widest letter-spacing-wider mb-4 md:mb-0">© 2025 SNEAKPEAK, Inc. All Rights Reserved</p>
           <div className="flex space-x-6">
-            <Link href="/privacy" className="text-gray-400 text-sm hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="/terms" className="text-gray-400 text-sm hover:text-white transition-colors">Terms of Service</Link>
-            <Link href="/accessibility" className="text-gray-400 text-sm hover:text-white transition-colors">Accessibility</Link>
+            <Link href="/privacy" className="text-gray-700 text-sm hover:text-[#B98615] transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="text-gray-700 text-sm hover:text-[#B98615] transition-colors">Terms of Service</Link>
+            <Link href="/accessibility" className="text-gray-700 text-sm hover:text-[#B98615] transition-colors">Accessibility</Link>
           </div>
         </div>
       </div>

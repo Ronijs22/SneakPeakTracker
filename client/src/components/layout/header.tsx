@@ -148,7 +148,7 @@ export default function Header() {
             <li>
               <Link 
                 href="/"
-                className="font-heading text-4xl hover:text-[#B98615] underline decoration-1 underline-offset-8"
+                className="font-heading text-4xl hover:text-[#B98615] text-[#B98615] underline decoration-[#B98615] decoration-2 underline-offset-8"
               >
                 SĀKUMS
               </Link>
@@ -164,7 +164,7 @@ export default function Header() {
             <li>
               <Link 
                 href="/gallery"
-                className="font-heading text-4xl hover:text-[#B98615] text-[#B98615] underline decoration-[#B98615] decoration-2 underline-offset-8"
+                className="font-heading text-4xl hover:text-[#B98615] underline decoration-1 underline-offset-8"
               >
                 GALERIJA
               </Link>

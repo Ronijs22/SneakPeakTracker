@@ -1,0 +1,943 @@
+/* Frame 3 */
+
+position: relative;
+width: 1440px;
+height: 1024px;
+
+
+
+/* Sākums */
+
+position: absolute;
+width: 1440px;
+height: 1024px;
+left: 0px;
+top: 0px;
+
+
+
+/* Sākums */
+
+position: absolute;
+width: 1440px;
+height: 1024px;
+left: 0px;
+top: 0px;
+
+background: linear-gradient(180deg, #FFFFFF 0%, #999999 100%);
+
+
+/* SNEAKPEAK_logo 1 */
+
+position: absolute;
+width: 185px;
+height: 185px;
+left: 9px;
+top: -12px;
+
+background: url(SNEAKPEAK_logo.png);
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 0px;
+height: 153px;
+left: 241.5px;
+top: 418px;
+
+
+
+/* Rectangle 2 */
+
+position: absolute;
+width: 575px;
+height: 57px;
+left: 252px;
+top: 52px;
+
+background: #D9D9D9;
+opacity: 0.5;
+border-radius: 10px;
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 225px;
+height: 57px;
+left: 252px;
+top: 52px;
+
+background: #D9D9D9;
+opacity: 0.5;
+border-radius: 10px;
+
+
+/* Rectangle 3 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 113px;
+height: 57px;
+left: 850px;
+top: 52px;
+
+background: #B98615;
+opacity: 0.65;
+border: 1px solid #000000;
+border-radius: 33px;
+
+
+/* MEKLĒT */
+
+position: absolute;
+width: 75px;
+height: 45px;
+left: 869px;
+top: 64px;
+
+font-family: 'Jomhuria';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* SĀKUMS */
+
+position: absolute;
+width: 150px;
+height: 45px;
+left: 272px;
+top: 159px;
+
+font-family: 'Jomhuria';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+text-align: center;
+text-decoration-line: underline;
+
+color: #B98615;
+
+
+
+/* KONTAKTI */
+
+position: absolute;
+width: 159px;
+height: 36px;
+left: 922px;
+top: 158px;
+
+font-family: 'Jomhuria';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+text-align: center;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* GALERIJA */
+
+position: absolute;
+width: 181px;
+height: 45px;
+left: 558px;
+top: 158px;
+
+font-family: 'Jomhuria';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+text-align: center;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* PAR MUMS */
+
+position: absolute;
+width: 180px;
+height: 38px;
+left: 402px;
+top: 159px;
+
+font-family: 'Jomhuria';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+text-align: center;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* Rectangle 6 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 182px;
+height: 37px;
+left: 48px;
+top: 154px;
+
+background: #B98615;
+border: 1px solid #000000;
+border-radius: 33px;
+
+
+/* VISAS KATEGORIJAS */
+
+position: absolute;
+width: 207px;
+height: 45px;
+left: 35px;
+top: 163px;
+
+font-family: 'Jomhuria';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 24px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* MANS GROZS PROFILS */
+
+position: absolute;
+width: 193px;
+height: 45px;
+left: 1247px;
+top: 64px;
+
+font-family: 'Jomolhari';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 21px;
+text-align: center;
+letter-spacing: 0.13em;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* VISAS KATEGORIJAS */
+
+position: absolute;
+width: 193px;
+height: 45px;
+left: 256px;
+top: 71px;
+
+font-family: 'Jomolhari';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 21px;
+text-align: center;
+letter-spacing: 0.13em;
+
+color: #000000;
+
+
+
+/* Ellipse 1 */
+
+position: absolute;
+width: 57px;
+height: 57px;
+left: 1055px;
+top: 52px;
+
+background: #D9D9D9;
+
+
+/* Ellipse 2 */
+
+position: absolute;
+width: 57px;
+height: 57px;
+left: 1210px;
+top: 52px;
+
+background: #D9D9D9;
+
+
+/* Ellipse 3 */
+
+position: absolute;
+width: 57px;
+height: 57px;
+left: 1132px;
+top: 52px;
+
+background: #D9D9D9;
+
+
+/* Arrow 1 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 17px;
+height: 0px;
+left: 461px;
+top: 72px;
+
+border: 2px solid #000000;
+transform: rotate(90deg);
+
+
+/* Arrow 2 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 17px;
+height: 0px;
+left: 210px;
+top: 164px;
+
+border: 2px solid #FFFFFF;
+transform: rotate(90deg);
+
+
+/* Ellipse 4 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 33px;
+height: 21px;
+left: 1067.11px;
+top: 80.26px;
+
+background: #D9D9D9;
+border: 3px solid #000000;
+
+
+/* Ellipse 6 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 36.01px;
+height: 34.3px;
+left: 1142.85px;
+top: 65.9px;
+
+background: #D9D9D9;
+border: 3px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+/* Ellipse 5 */
+
+position: absolute;
+width: 24px;
+height: 23px;
+left: 1072px;
+top: 64px;
+
+background: #D9D9D9;
+border: 3px solid #000000;
+
+
+/* Ellipse 7 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 29px;
+height: 28px;
+left: 1225px;
+top: 62px;
+
+background: #D9D9D9;
+border: 3px solid #000000;
+
+
+/* Rectangle 5 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 40px;
+height: 21px;
+left: 1219.5px;
+top: 79px;
+
+background: #D9D9D9;
+border: 3px solid #000000;
+
+
+/* Line 1 */
+
+position: absolute;
+width: 12px;
+height: 0px;
+left: 61px;
+top: 168px;
+
+border: 1px solid #FFFFFF;
+
+
+/* Line 2 */
+
+position: absolute;
+width: 12px;
+height: 0px;
+left: 61px;
+top: 173px;
+
+border: 1px solid #FFFFFF;
+
+
+/* Line 4 */
+
+position: absolute;
+width: 12px;
+height: 0px;
+left: 61px;
+top: 178px;
+
+border: 1px solid #FFFFFF;
+
+
+/* PIEDĀVĀJUMS */
+
+position: absolute;
+width: 213px;
+height: 36px;
+left: 709px;
+top: 159px;
+
+font-family: 'Jomhuria';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+text-align: center;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* © 2025 SNEAKPEAK, Inc. All Rights Reserved */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+position: absolute;
+width: 577px;
+height: 36px;
+left: 0px;
+top: 988px;
+
+
+
+/* © 2025 SNEAKPEAK, Inc. All Rights Reserved */
+
+width: 577px;
+height: 36px;
+
+font-family: 'Jomhuria';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 36px;
+/* identical to box height */
+text-align: center;
+letter-spacing: 0.13em;
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* SŪDZĪBAS */
+
+position: absolute;
+width: 159px;
+height: 36px;
+left: 1061px;
+top: 158px;
+
+font-family: 'Jomhuria';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+text-align: center;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* SNEAKPEAK_logo 2 */
+
+position: absolute;
+visibility: hidden;
+width: 715px;
+height: 715px;
+left: 853px;
+top: 66px;
+
+background: url(SNEAKPEAK_logo.png);
+
+
+/* SNEAKPEAK_logo 3 */
+
+position: absolute;
+width: 428px;
+height: 428px;
+left: 996px;
+top: 203px;
+
+background: url(SNEAKPEAK_logo.png);
+
+
+/* Sākums */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 989px;
+height: 391px;
+left: 0px;
+top: 238px;
+
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.1);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 2px;
+
+
+/* meet-the-teacher-who-wore-different-sneakers-ever-3-410-1718658527-0_16x9-7692523 1 */
+
+position: absolute;
+width: 1440px;
+height: 810px;
+left: 0px;
+top: -226px;
+
+background: url(meet-the-teacher-who-wore-different-sneakers-ever-3-410-1718658527-0_16x9-7692523.jpg);
+
+
+/* JAUNS STILS */
+
+position: absolute;
+width: 407px;
+height: 45px;
+left: 40px;
+top: 93px;
+
+font-family: 'Jomolhari';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 38px;
+letter-spacing: 0.13em;
+
+color: #FFFFFF;
+
+
+
+/* NEBAIDIES IEKĀPT JAUNĀ STILĀ AR SNEAKPEAK */
+
+position: absolute;
+width: 284px;
+height: 45px;
+left: 40px;
+top: 133px;
+
+font-family: 'Jomolhari';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 21px;
+letter-spacing: 0.13em;
+
+color: #FFFFFF;
+
+
+
+/* Frame 2 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 173px;
+height: 63px;
+left: 20px;
+top: 177px;
+
+
+
+/* Rectangle 3 */
+
+box-sizing: border-box;
+
+width: 153px;
+height: 43px;
+
+background: #B98615;
+border: 1px solid #000000;
+border-radius: 33px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* UZZINĀT VAIRĀK */
+
+position: absolute;
+width: 101px;
+height: 34px;
+left: 56px;
+top: 199px;
+
+font-family: 'Jomhuria';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 24px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+
+
+box-sizing: border-box;
+
+position: absolute;
+width: 314px;
+height: 282px;
+left: 110px;
+top: 686px;
+
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 2px;
+
+
+/* 3 1 */
+
+position: absolute;
+width: 277px;
+height: 277px;
+left: 0px;
+top: -38px;
+
+background: url(3.png);
+
+
+/* Nike Air Max Sunder */
+
+position: absolute;
+width: 407px;
+height: 45px;
+left: -46px;
+top: 194px;
+
+font-family: 'Jomolhari';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 38px;
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #000000;
+
+
+
+/* 190€ */
+
+position: absolute;
+width: 407px;
+height: 45px;
+left: -93px;
+top: 239px;
+
+font-family: 'Jomolhari';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 38px;
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #000000;
+
+
+
+/* 245€ */
+
+position: absolute;
+width: 407px;
+height: 45px;
+left: -27px;
+top: 248px;
+
+font-family: 'Jomolhari';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #5C5858;
+
+
+
+/* Untitled design (74) 1 */
+
+position: absolute;
+width: 175px;
+height: 175px;
+left: 70px;
+top: 85px;
+
+background: url(Untitled design (74));
+
+
+/* Line 5 */
+
+position: absolute;
+width: 47px;
+height: 0px;
+left: 153px;
+top: 262px;
+
+border: 1px solid #000000;
+
+
+
+
+box-sizing: border-box;
+
+position: absolute;
+width: 314px;
+height: 282px;
+left: 576px;
+top: 686px;
+
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 2px;
+
+
+/* 2 1 */
+
+position: absolute;
+width: 292px;
+height: 292px;
+left: 0px;
+top: -42px;
+
+background: url(2.png);
+
+
+/* Adidas Originals Forum 2000 */
+
+position: absolute;
+width: 407px;
+height: 45px;
+left: -47px;
+top: 193px;
+
+font-family: 'Jomolhari';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 38px;
+text-align: center;
+letter-spacing: -0.03em;
+
+color: #000000;
+
+
+
+/* Untitled design (74) 1 */
+
+position: absolute;
+width: 175px;
+height: 175px;
+left: 75px;
+top: 85px;
+
+background: url(Untitled design (74));
+
+
+/* 314€ */
+
+position: absolute;
+width: 407px;
+height: 45px;
+left: -41px;
+top: 237px;
+
+font-family: 'Jomolhari';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 38px;
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #000000;
+
+
+
+
+
+box-sizing: border-box;
+
+position: absolute;
+width: 314px;
+height: 282px;
+left: 1015px;
+top: 686px;
+
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 2px;
+
+
+/* 1 1 */
+
+position: absolute;
+width: 274px;
+height: 274px;
+left: 20px;
+top: -44px;
+
+background: url(1.png);
+
+
+/* Nike Kobe 5 PROTRO */
+
+position: absolute;
+width: 407px;
+height: 45px;
+left: -47px;
+top: 193px;
+
+font-family: 'Jomolhari';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 38px;
+text-align: center;
+letter-spacing: 0.13em;
+
+color: #000000;
+
+
+
+/* Untitled design (74) 1 */
+
+position: absolute;
+width: 175px;
+height: 175px;
+left: 66px;
+top: 85px;
+
+background: url(Untitled design (74));
+
+
+/* 237€ */
+
+position: absolute;
+width: 407px;
+height: 45px;
+left: -80px;
+top: 238px;
+
+font-family: 'Jomolhari';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 38px;
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #000000;
+
+
+
+/* 295€ */
+
+position: absolute;
+width: 407px;
+height: 45px;
+left: -13px;
+top: 247px;
+
+font-family: 'Jomolhari';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #5C5858;
+
+
+
+/* Line 5 */
+
+position: absolute;
+width: 47px;
+height: 0px;
+left: 167px;
+top: 261px;
+
+border: 1px solid #000000;
