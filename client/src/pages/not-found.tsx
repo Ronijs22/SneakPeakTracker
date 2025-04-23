@@ -210,7 +210,7 @@ export default function Gallery() {
         <div className="max-w-md mx-auto mb-8">
           <input
             type="text"
-            placeholder="Search sneakers..."
+            placeholder="Meklēt apavus..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#B98615]"
