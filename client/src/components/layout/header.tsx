@@ -211,7 +211,7 @@ export default function Header() {
             </li>
             <li>
               <Link 
-                href="/gallery"
+                href="/photos"
                 className="font-heading text-4xl hover:text-[#B98615] underline decoration-1 underline-offset-8"
               >
                 GALERIJA
