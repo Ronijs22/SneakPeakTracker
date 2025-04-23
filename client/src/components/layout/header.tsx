@@ -22,7 +22,7 @@ export default function Header() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const { toast } = useToast();
-  
+
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     if (searchQuery.trim()) {
@@ -41,19 +41,11 @@ export default function Header() {
               <img src="/assets/logo.png" alt="SNEAKPEAK" className="h-36 w-36 object-contain" />
             </Link>
           </div>
-          
+
           {/* Search with Categories */}
           <div className="hidden md:flex relative flex-1 max-w-lg mx-8">
             <div className="flex w-full">
               <div className="relative w-full flex">
-                {/* Categories Dropdown */}
-                <div className="relative flex items-center bg-opacity-50 bg-gray-200 rounded-lg px-4 min-w-[225px]">
-                  <span className="text-xs uppercase tracking-widest font-medium font-jomolhari">VISAS KATEGORIJAS</span>
-                  <svg className="w-4 h-4 ml-2 transform rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14"></path>
-                  </svg>
-                </div>
-                
                 {/* Search Input */}
                 <form onSubmit={handleSearch} className="flex-1">
                   <Input
@@ -64,7 +56,7 @@ export default function Header() {
                     className="w-full border border-gray-300 rounded-r-none border-l-0 py-3.5 focus:outline-none focus:ring-1 focus:ring-[#B98615] focus:border-[#B98615]"
                   />
                 </form>
-                
+
                 {/* Search Button */}
                 <Button 
                   onClick={handleSearch}
@@ -76,7 +68,7 @@ export default function Header() {
               </div>
             </div>
           </div>
-          
+
           {/* User Icons */}
           <div className="flex items-center space-x-4">
             {/* Login Dialog */}
@@ -125,7 +117,7 @@ export default function Header() {
                 </DialogFooter>
               </DialogContent>
             </Dialog>
-            
+
             {/* Messages Icon */}
             <Link href="/messages" className="flex flex-col items-center">
               <div className="w-14 h-14 bg-gray-300 rounded-full border-3 border-black flex items-center justify-center">
@@ -134,7 +126,7 @@ export default function Header() {
                 </svg>
               </div>
             </Link>
-            
+
             {/* Notifications Icon */}
             <Link href="/notifications" className="flex flex-col items-center">
               <div className="w-14 h-14 bg-gray-300 rounded-full border-3 border-black flex items-center justify-center">
@@ -143,7 +135,7 @@ export default function Header() {
                 </svg>
               </div>
             </Link>
-            
+
             {/* Cart Icon & Text */}
             <div className="flex flex-col items-center">
               <button onClick={openCart} className="group">
@@ -162,7 +154,7 @@ export default function Header() {
                 </div>
               </button>
             </div>
-            
+
             {/* Mobile Menu Toggle */}
             <button 
               onClick={() => setShowMobileMenu(!showMobileMenu)}
@@ -174,7 +166,7 @@ export default function Header() {
             </button>
           </div>
         </div>
-        
+
         {/* Categories Button + Main Navigation */}
         <nav className="hidden md:flex items-center bg-black text-white py-3">
           {/* All Categories Button */}
@@ -190,7 +182,7 @@ export default function Header() {
               </div>
             </button>
           </div>
-          
+
           {/* Main Navigation Links */}
           <ul className="flex space-x-10 px-6 justify-center w-full">
             <li>
@@ -244,7 +236,7 @@ export default function Header() {
           </ul>
         </nav>
       </div>
-      
+
       {/* Mobile Menu */}
       {showMobileMenu && (
         <MobileMenu 
