@@ -38,9 +38,9 @@ export default function Header() {
               <div className="relative w-full flex">
                 {/* Categories Dropdown */}
                 <div className="relative flex items-center bg-opacity-50 bg-gray-200 rounded-lg px-4 min-w-[225px]">
-                  <span className="text-sm uppercase tracking-wider font-medium">VISAS KATEGORIJAS</span>
-                  <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                  <span className="text-xs uppercase tracking-widest font-medium font-jomolhari">VISAS KATEGORIJAS</span>
+                  <svg className="w-4 h-4 ml-2 transform rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14"></path>
                   </svg>
                 </div>
                 
@@ -58,7 +58,7 @@ export default function Header() {
                 {/* Search Button */}
                 <Button 
                   onClick={handleSearch}
-                  className="bg-[#B98615] bg-opacity-65 hover:bg-opacity-100 text-black font-heading text-xl rounded-r-full px-4 py-2"
+                  className="bg-[#B98615] bg-opacity-65 hover:bg-opacity-100 text-black font-heading text-4xl rounded-r-full px-6 py-2 border border-black"
                   variant="default"
                 >
                   MEKLĒT
@@ -130,12 +130,16 @@ export default function Header() {
         {/* Categories Button + Main Navigation */}
         <nav className="hidden md:flex items-center bg-black text-white py-3">
           {/* All Categories Button */}
-          <div className="relative mr-6">
-            <button className="bg-[#B98615] text-white uppercase tracking-wider text-sm px-5 py-2 rounded-full flex items-center">
-              <span className="mr-2">VISAS KATEGORIJAS</span>
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
-              </svg>
+          <div className="relative mr-6 ml-4">
+            <button className="bg-[#B98615] text-white uppercase tracking-wider text-xs px-5 py-2 rounded-full flex items-center">
+              <div className="flex items-center mr-2">
+                <div className="flex flex-col items-start space-y-1">
+                  <span className="w-3 h-0.5 bg-white"></span>
+                  <span className="w-3 h-0.5 bg-white"></span>
+                  <span className="w-3 h-0.5 bg-white"></span>
+                </div>
+                <span className="ml-2">VISAS KATEGORIJAS</span>
+              </div>
             </button>
           </div>
           
@@ -168,7 +172,7 @@ export default function Header() {
             <li>
               <Link 
                 href="/offers"
-                className="font-heading text-2xl hover:text-[#B98615] underline decoration-1 underline-offset-8"
+                className="font-heading text-4xl hover:text-[#B98615] underline decoration-1 underline-offset-8"
               >
                 PIEDĀVĀJUMI
               </Link>
@@ -176,7 +180,7 @@ export default function Header() {
             <li>
               <Link 
                 href="/contact"
-                className="font-heading text-2xl hover:text-[#B98615] underline decoration-1 underline-offset-8"
+                className="font-heading text-4xl hover:text-[#B98615] underline decoration-1 underline-offset-8"
               >
                 KONTAKTI
               </Link>
@@ -184,7 +188,7 @@ export default function Header() {
             <li>
               <Link 
                 href="/complaints"
-                className="font-heading text-2xl hover:text-[#B98615] underline decoration-1 underline-offset-8"
+                className="font-heading text-4xl hover:text-[#B98615] underline decoration-1 underline-offset-8"
               >
                 SŪDZĪBAS
               </Link>
