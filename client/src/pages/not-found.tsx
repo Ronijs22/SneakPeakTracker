@@ -7,17 +7,17 @@ const photos = [
   {
     id: 1,
     src: "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb",
-    title: "Premium Sneakers"
+    title: "Premium Air Classic"
   },
   {
     id: 2,
-    src: "https://via.placeholder.com/150",
-    title: "Sneaker 2"
+    src: "https://images.unsplash.com/photo-1605408499391-6368c628ef42",
+    title: "Street Collection Pro"
   },
   {
     id: 3,
-    src: "https://via.placeholder.com/150",
-    title: "Sneaker 3"
+    src: "https://images.unsplash.com/photo-1600269452121-4f2416e55c28",
+    title: "Urban Style Elite"
   },
   {
     id: 4,
