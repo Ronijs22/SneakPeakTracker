@@ -1,0 +1,611 @@
+/* Frame 1 */
+
+position: relative;
+width: 1440px;
+height: 1024px;
+
+
+
+/* Group 4 */
+
+position: absolute;
+width: 1440px;
+height: 1024px;
+left: -13px;
+top: 18px;
+
+
+
+/* Group 3 */
+
+position: absolute;
+width: 1440px;
+height: 1024px;
+left: -13px;
+top: 18px;
+
+
+
+/* Galerija */
+
+position: absolute;
+width: 1440px;
+height: 1024px;
+left: -13px;
+top: 18px;
+
+background: linear-gradient(180deg, #FFFFFF 0%, #999999 100%);
+
+
+/* SNEAKPEAK_logo 1 */
+
+position: absolute;
+width: 185px;
+height: 185px;
+left: 9px;
+top: -12px;
+
+background: url(SNEAKPEAK_logo.png);
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 0px;
+height: 153px;
+left: 241.5px;
+top: 418px;
+
+
+
+/* Rectangle 2 */
+
+position: absolute;
+width: 575px;
+height: 57px;
+left: 252px;
+top: 52px;
+
+background: #D9D9D9;
+opacity: 0.5;
+border-radius: 10px;
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 225px;
+height: 57px;
+left: 252px;
+top: 52px;
+
+background: #D9D9D9;
+opacity: 0.5;
+border-radius: 10px;
+
+
+/* Rectangle 3 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 113px;
+height: 57px;
+left: 850px;
+top: 52px;
+
+background: #B98615;
+opacity: 0.65;
+border: 1px solid #000000;
+border-radius: 33px;
+
+
+/* MEKLĒT */
+
+position: absolute;
+width: 75px;
+height: 45px;
+left: 869px;
+top: 64px;
+
+font-family: 'Jomhuria';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* SĀKUMS */
+
+position: absolute;
+width: 150px;
+height: 45px;
+left: 272px;
+top: 159px;
+
+font-family: 'Jomhuria';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+text-align: center;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* SŪDZĪBAS */
+
+position: absolute;
+width: 180px;
+height: 45px;
+left: 1059px;
+top: 157px;
+
+font-family: 'Jomhuria';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+text-align: center;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* KONTAKTI */
+
+position: absolute;
+width: 159px;
+height: 36px;
+left: 922px;
+top: 158px;
+
+font-family: 'Jomhuria';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+text-align: center;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* GALERIJA */
+
+position: absolute;
+width: 181px;
+height: 45px;
+left: 558px;
+top: 158px;
+
+font-family: 'Jomhuria';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+text-align: center;
+text-decoration-line: underline;
+
+color: #B98615;
+
+
+
+/* PAR MUMS */
+
+position: absolute;
+width: 180px;
+height: 38px;
+left: 402px;
+top: 159px;
+
+font-family: 'Jomhuria';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+text-align: center;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* Rectangle 6 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 182px;
+height: 37px;
+left: 48px;
+top: 154px;
+
+background: #B98615;
+border: 1px solid #000000;
+border-radius: 33px;
+
+
+/* VISAS KATEGORIJAS */
+
+position: absolute;
+width: 207px;
+height: 45px;
+left: 35px;
+top: 163px;
+
+font-family: 'Jomhuria';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 24px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* MANS GROZS PROFILS */
+
+position: absolute;
+width: 193px;
+height: 45px;
+left: 1247px;
+top: 64px;
+
+font-family: 'Jomolhari';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 21px;
+text-align: center;
+letter-spacing: 0.13em;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* VISAS KATEGORIJAS */
+
+position: absolute;
+width: 193px;
+height: 45px;
+left: 256px;
+top: 71px;
+
+font-family: 'Jomolhari';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 21px;
+text-align: center;
+letter-spacing: 0.13em;
+
+color: #000000;
+
+
+
+/* Ellipse 1 */
+
+position: absolute;
+width: 57px;
+height: 57px;
+left: 1055px;
+top: 52px;
+
+background: #D9D9D9;
+
+
+/* Ellipse 2 */
+
+position: absolute;
+width: 57px;
+height: 57px;
+left: 1210px;
+top: 52px;
+
+background: #D9D9D9;
+
+
+/* Ellipse 3 */
+
+position: absolute;
+width: 57px;
+height: 57px;
+left: 1132px;
+top: 52px;
+
+background: #D9D9D9;
+
+
+/* Arrow 1 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 17px;
+height: 0px;
+left: 461px;
+top: 72px;
+
+border: 2px solid #000000;
+transform: rotate(90deg);
+
+
+/* Arrow 2 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 17px;
+height: 0px;
+left: 210px;
+top: 164px;
+
+border: 2px solid #FFFFFF;
+transform: rotate(90deg);
+
+
+/* Ellipse 4 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 33px;
+height: 21px;
+left: 1067.11px;
+top: 80.26px;
+
+background: #D9D9D9;
+border: 3px solid #000000;
+
+
+/* Ellipse 6 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 36.01px;
+height: 34.3px;
+left: 1142.85px;
+top: 65.9px;
+
+background: #D9D9D9;
+border: 3px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+/* Ellipse 5 */
+
+position: absolute;
+width: 24px;
+height: 23px;
+left: 1072px;
+top: 64px;
+
+background: #D9D9D9;
+border: 3px solid #000000;
+
+
+/* Ellipse 7 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 29px;
+height: 28px;
+left: 1225px;
+top: 62px;
+
+background: #D9D9D9;
+border: 3px solid #000000;
+
+
+/* Rectangle 5 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 40px;
+height: 21px;
+left: 1219.5px;
+top: 79px;
+
+background: #D9D9D9;
+border: 3px solid #000000;
+
+
+/* Line 1 */
+
+position: absolute;
+width: 12px;
+height: 0px;
+left: 61px;
+top: 168px;
+
+border: 1px solid #FFFFFF;
+
+
+/* Line 2 */
+
+position: absolute;
+width: 12px;
+height: 0px;
+left: 61px;
+top: 173px;
+
+border: 1px solid #FFFFFF;
+
+
+/* Line 4 */
+
+position: absolute;
+width: 12px;
+height: 0px;
+left: 61px;
+top: 178px;
+
+border: 1px solid #FFFFFF;
+
+
+/* PIEDĀVĀJUMS */
+
+position: absolute;
+width: 213px;
+height: 36px;
+left: 709px;
+top: 159px;
+
+font-family: 'Jomhuria';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+text-align: center;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+
+/* image 3 */
+
+position: absolute;
+width: 353px;
+height: 235px;
+left: 73px;
+top: 436px;
+
+background: url(image.png);
+
+
+/* image 4 */
+
+position: absolute;
+width: 352px;
+height: 235px;
+left: 540px;
+top: 436px;
+
+background: url(image.png);
+
+
+/* image 7 */
+
+position: absolute;
+width: 238px;
+height: 159px;
+left: 731px;
+top: 235px;
+
+background: url(image.png);
+
+
+/* image 8 */
+
+position: absolute;
+width: 306px;
+height: 306px;
+left: 990px;
+top: 418px;
+
+background: url(image.png);
+background-blend-mode: darken;
+
+
+/* image 9 */
+
+position: absolute;
+width: 302px;
+height: 201px;
+left: 73px;
+top: 740px;
+
+background: url(image.png);
+mix-blend-mode: plus-darker;
+
+
+/* image 10 */
+
+position: absolute;
+width: 357px;
+height: 201px;
+left: 540px;
+top: 740px;
+
+background: url(image.png);
+
+
+/* © 2025 SNEAKPEAK, Inc. All Rights Reserved */
+
+position: absolute;
+width: 577px;
+height: 36px;
+left: -12px;
+top: 1006px;
+
+font-family: 'Jomhuria';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 36px;
+/* identical to box height */
+text-align: center;
+letter-spacing: 0.13em;
+
+color: #000000;
+
+
+
+/* image 2 */
+
+position: absolute;
+width: 241px;
+height: 161px;
+left: 1049px;
+top: 256px;
+
+background: url(image.png);
+
+
+/* image 5 */
+
+position: absolute;
+width: 240px;
+height: 160px;
+left: 71px;
+top: 257px;
+
+background: url(image.png);
+
+
+/* image 6 */
+
+position: absolute;
+width: 209px;
+height: 157px;
+left: 405px;
+top: 260px;
+
+background: url(image.png);
+
+
+/* image 11 */
+
+position: absolute;
+width: 194px;
+height: 194px;
+left: 1096px;
+top: 761px;
+
+background: url(image.png);
+mix-blend-mode: darken;
